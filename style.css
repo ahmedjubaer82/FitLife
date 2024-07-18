@@ -8,17 +8,16 @@
     font-family: "Inter", sans-serif;
 }
 
-body {
-    /* border: 2px solid red; */
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 nav {
-    width: 80%;
     display: flex;
     align-items: center;
     border: 2px solid blue;
     justify-content: space-between;
-    margin: 0 auto;
 }
 
 .menu ul {
@@ -26,9 +25,9 @@ nav {
     display: flex;
     align-items: center;
     gap: 6rem;
-    padding: 10px 10px;
+    padding: 4px 4px;
     border-radius: 30px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid blueviolet;
 }
 
 .menu ul li a {
@@ -38,21 +37,65 @@ nav {
 }
 
 .menu ul li:first-child {
-    background-color: rgba(230, 83, 60, 1.00);
+    /* background-color: rgba(230, 83, 60, 1.00); */
+    background-color: blueviolet;
     padding: 8px 20px;
     border-radius: 20px;
 }
 
 header {
     background: ;
-    background: linear-gradient(black, rgba(0, 0, 0, 0.767), black);
+    background: linear-gradient(black, blueviolet, black);
 }
 
 #fitlife {
-    color: rgba(230, 83, 60, 1.00);
+    color: blueviolet;
     font-size: 36px;
 }
 
 .header-container {
     border: 2px solid greenyellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-desc {
+    width: 50%;
+}
+
+.header-desc h1 {
+    color: white;
+    font-size: 78px;
+    font-weight: 900;
+}
+
+.header-desc p {
+    color: white;
+    padding: 20px 0;
+}
+
+#shape {
+    font-size: 100px;
+    font-family: 'Miama', sans-serif
+}
+
+.btn-primary {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 16px 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: blueviolet;
+}
+
+.btn-secondary {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 16px 40px;
+    border-radius: 30px;
+    border: 2px solid blueviolet;
+    background-color: transparent;
 }
