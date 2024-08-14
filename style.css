@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/miama');
-/* font-family: 'Miama', sans-serif; */
 
+/* general css */
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +9,19 @@
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    padding: 2rem 0;
 }
 
+.full-width {
+    background-color: rgba(34, 34, 34, 1);
+}
+
+/* navbar css */
 nav {
     display: flex;
     align-items: center;
-    border: 2px solid blue;
     justify-content: space-between;
 }
 
@@ -27,34 +32,44 @@ nav {
     gap: 6rem;
     padding: 4px 4px;
     border-radius: 30px;
-    border: 2px solid blueviolet;
+    border: 2px solid rgba(230, 83, 60, 1);
 }
 
 .menu ul li a {
     color: white;
     text-decoration: none;
-    font-size: 18px
+    font-size: 1.2rem;
 }
 
 .menu ul li:first-child {
     /* background-color: rgba(230, 83, 60, 1.00); */
-    background-color: blueviolet;
+    background-color: rgba(230, 83, 60, 1);
     padding: 8px 20px;
     border-radius: 20px;
 }
 
+.menu ul li:last-child {
+    padding: 0 20px;
+}
+
+.bar {
+    color: white;
+    display: none
+}
+
+/* header css */
 header {
-    background: ;
-    background: linear-gradient(black, blueviolet, black);
+    background: linear-gradient(black, rgba(0, 0, 0, 0.861), black);
 }
 
 #fitlife {
-    color: blueviolet;
-    font-size: 36px;
+    color: rgba(230, 83, 60, 1);
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .header-container {
-    border: 2px solid greenyellow;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +81,7 @@ header {
 
 .header-desc h1 {
     color: white;
-    font-size: 78px;
+    font-size: 5rem;
     font-weight: 900;
 }
 
@@ -77,25 +92,285 @@ header {
 
 #shape {
     font-size: 100px;
-    font-family: 'Miama', sans-serif
+    font-family: 'Miama', sans-serif;
 }
 
 .btn-primary {
     color: white;
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 16px 40px;
     border-radius: 30px;
     border: none;
-    background-color: blueviolet;
+    background-color: rgba(230, 83, 60, 1);
+    cursor: pointer;
 }
 
 .btn-secondary {
     color: white;
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 16px 40px;
     border-radius: 30px;
-    border: 2px solid blueviolet;
+    border: 2px solid rgba(230, 83, 60, 1);
     background-color: transparent;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/* habit cards css */
+.habit-cards-container {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.habit-cards-container h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-top: 2rem;
+}
+
+.habit-cards-container p {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+.habit-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 0 3rem;
+}
+
+.habit-cards img {
+    border-radius: 50%;
+}
+
+.habit-cards h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.habit-cards p {
+    font-size: 1rem;
+}
+
+/* extra mile css */
+.extra-mile-container {
+    background-color: black;
+    color: white;
+}
+
+.extra-mile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.5rem;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 1rem;
+}
+
+.extra-mile-desc h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.extra-mile-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+}
+
+.extra-mile-desc p {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.extra-mile-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.extra-mile-img img {
+    width: 25rem;
+    border-radius: 10px;
+}
+
+/* training container css */
+.training-container {
+    background-color: black;
+    color: white;
+}
+
+.training h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.training p {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.training-cards {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;    
+}
+
+.training-cards div {
+    height: 15rem;
+}
+
+.training-cards img {
+    /* background-repeat: no-repeat; */
+    /* object-fit: cover; */
+}
+
+.training-cards1 {
+    background-image: url(./images/exercise1.jpg);
+}
+.training-cards2 {
+    background-image: url(./images/exercise2.png);
+}
+.training-cards3 {
+    background-image: url(./images/exercise3.png);
+}
+.training-cards4 {
+    background-image: url(./images/exercise4.png);
+}
+.training-cards5 {
+    background-image: url(./images/exercise5.jpg);
+}
+.training-cards6 {
+    background-image: url(./images/exercise6.jpg);
+}
+
+/* bmi calculator css */
+.bmi-calc-container {
+    background-color: black;
+    color: white;
+}
+
+.bmi-calc-title {
+    width: 30rem;
+    margin: 0 auto;
+}
+
+.bmi-calc-title h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.bmi-calc-title p {
+    font-size: 14px;
+}
+
+/* teem member css */
+.our-teem-container {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.our-teem-container h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-top: 2rem;
+}
+
+.our-teem-container p {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+.teem-member {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.teem-member img {
+    object-fit: cover;
+    width: 20rem;
+    height: 16rem;
+}
+
+/* footer css */
+footer {
+    background-color: rgba(34, 34, 34, 1);
+    color: white;
+}
+
+.footers {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10rem;
+}
+
+.footer-1st h1{
+    color: rgba(230, 83, 60, 1);
+    font-size: 4.5rem;
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.footer-1st p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-2nd h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.footer-3rd h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.footer-2nd a {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    padding: .4rem;
+    font-size: 1.5rem;
+}
+
+.footer-3rd a {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    padding: .4rem;
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin: 2.5rem auto;
+}
+
+
+
+/* Responsive for small devices */
+@media screen and (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+
+    .bar {
+        display: block;
+    }
 }
