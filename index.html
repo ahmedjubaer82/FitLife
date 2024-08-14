@@ -88,23 +88,41 @@
             <h1>Trainings and Exercises</h1>
             <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
             <div class="training-cards">
-                <div class="training-cards1">
-                    <h6>Leg Press: Works the quadriceps and glutes</h6>
+                <div class="exercise-item">
+                    <img src="./images/exercise1.jpg" alt="">
+                    <div class="overlay cards1">
+                        <p>The leg extension is a resistance weight training exercise that targets the quadriceps muscle in the legs.</p>
+                    </div>
                 </div>
-                <div class="training-cards2">
-                    <h6>Leg Press: Works the quadriceps and glutes</h6>
+                <div class="exercise-item">
+                    <img src="./images/exercise2.png" alt="">
+                    <div class="overlay cards2">
+                        <p>Push ups. This exercise builds the upper body and strengthens your core, including the chest and spinal cord.</p>
+                    </div>
                 </div>
-                <div class="training-cards3">
-                    <h6>Leg Press: Works the quadriceps and glutes</h6>
+                <div class="exercise-item">
+                    <img src="./images/exercise3.png" alt="">
+                    <div class="overlay cards3">
+                        <p>Squats: This is yet another effective freehand workout that helps in eliminating the fat from your abdomen and legs.</p>
+                    </div>
                 </div>
-                <div class="training-cards4">
-                    <h6>Leg Press: Works the quadriceps and glutes</h6>
+                <div class="exercise-item">
+                    <img src="./images/exercise4.png" alt="">
+                    <div class="overlay cards4">
+                        <p>Superman. Supermans are one of the most effective daily exercises to strengthen your erector spinae muscles that support your spine.</p>
+                    </div>
                 </div>
-                <div class="training-cards5">
-                    <h6>Leg Press: Works the quadriceps and glutes</h6>
+                <div class="exercise-item">
+                    <img src="./images/exercise5.jpg" alt="">
+                    <div class="overlay cards5">
+                        <p>Mountain climbing exercise targets core muscles such as the back, hips, abs, glutes, leg muscles, and shoulders.</p>
+                    </div>
                 </div>
-                <div class="training-cards6">
-                    <h6>Leg Press: Works the quadriceps and glutes</h6>
+                <div class="exercise-item">
+                    <img src="./images/exercise6.jpg" alt="">
+                    <div class="overlay cards6">
+                        <p>The crunch is an abdominal exercise that works the rectus abdominis muscle.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,17 +138,43 @@
         <div class="bmi-calc">
             <div class="bmi-calc-title container">
                 <h1>BMI Calculator</h1>
-                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of <br> income or access to a gym.</p>
             </div>
             <div class="full-width">
                 <div class="calculator container">
-                    <div>
+                    <div class="bmi-chart">
                         <h1>BMI Calculator Chart</h1>
+                        <table>
+                            <tr><th>BMI</th><th>Weight Status</th></tr>
+                            <tr><td>Below 18.5</td><td>Underweight</td></tr>
+                            <tr><td>18.5 - 24.9</td><td>Healthy Weight</td></tr>
+                            <tr><td>25 - 29.9</td><td>Overweight</td></tr>
+                            <tr><td>Above 30</td><td>Obese</td></tr>
+                        </table>
                     </div>
-                    <div>
+                    <div class="bmi-rght-part">
                         <h1>Calculate your BMI</h1>
                         <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
-                        <button class="btn-primary">Calculate</button>
+                        <form action="" class="form">
+                            <div class="bmi-form">
+                                <div class="left-form">
+                                    <input type="text" placeholder="Height/cm">
+                                    <input type="text" placeholder="Age">                            
+                                </div>
+                                <div class="right-form">
+                                    <input type="text" placeholder="Weight/kg">
+                                    <select name="" id="">
+                                        <option value="" disabled selected>Sex</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <select name="" id="">
+                                <option value="" disabled selected>Select an activity factor</option>
+                            </select>
+                        </form>
+                        <button id="bmi-btn" class="btn-primary">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -143,12 +187,48 @@
             <h1>Meet Our Team</h1>
             <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
             <div class="teem-member">
-                <div class="card1"><img src="./images/trainer1.png" alt=""></div>
-                <div class="card2"><img src="./images/trainer2.png" alt=""></div>
-                <div class="card3"><img src="./images/trainer3.png" alt=""></div>
-                <div class="card4"><img src="./images/trainer4.png" alt=""></div>
-                <div class="card5"><img src="./images/trainer5.png" alt=""></div>
-                <div class="card6"><img src="./images/trainer6.png" alt=""></div>
+                <div class="card1">
+                    <img src="./images/trainer1.png" alt="">
+                    <div class="name-title">
+                        <h2>Jerome Bell</h2>
+                        <p>Trainer</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="./images/trainer2.png" alt="">
+                    <div class="name-title">
+                        <h2>Cameron Williamson</h2>
+                        <p>Trainer</p>
+                    </div>
+                </div>
+                <div class="card3">
+                    <img src="./images/trainer3.png" alt="">
+                    <div class="name-title">
+                        <h2>Darrell Steward</h2>
+                        <p>Trainer</p>
+                    </div>
+                </div>
+                <div class="card4">
+                    <img src="./images/trainer4.png" alt="">
+                    <div class="name-title">
+                        <h2>Dianne Russell</h2>
+                        <p>Trainer</p>
+                    </div>
+                </div>
+                <div class="card5">
+                    <img src="./images/trainer5.png" alt="">
+                    <div class="name-title">
+                        <h2>Cody Fisher</h2>
+                        <p>Trainer</p>
+                    </div>
+                </div>
+                <div class="card6">
+                    <img src="./images/trainer6.png" alt="">
+                    <div class="name-title">
+                        <h2>Theresa Webb</h2>
+                        <p>Trainer</p>
+                    </div>
+                </div>
             </div>
         </div>
      </section>

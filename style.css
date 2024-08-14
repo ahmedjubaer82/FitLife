@@ -91,7 +91,7 @@ header {
 }
 
 #shape {
-    font-size: 100px;
+    font-size: 8rem;
     font-family: 'Miama', sans-serif;
 }
 
@@ -230,27 +230,52 @@ header {
 }
 
 .training-cards img {
-    /* background-repeat: no-repeat; */
-    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.training-cards1 {
-    background-image: url(./images/exercise1.jpg);
+.exercise-item {
+    position: relative;
 }
-.training-cards2 {
-    background-image: url(./images/exercise2.png);
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
 }
-.training-cards3 {
-    background-image: url(./images/exercise3.png);
+
+.cards1 {
+    background-color: #06ffd280;
 }
-.training-cards4 {
-    background-image: url(./images/exercise4.png);
+
+.cards2 {
+    background-color: rgba(255, 0, 0, 0.3);
 }
-.training-cards5 {
-    background-image: url(./images/exercise5.jpg);
+
+.cards3 {
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.training-cards6 {
-    background-image: url(./images/exercise6.jpg);
+
+.cards4 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cards5 {
+    background-color: rgba(66, 255, 0, 0.3);
+}
+
+.cards6 {
+    background-color: rgba(0, 71, 255, 0.3);
+}
+
+.overlay p {
+    font-size: .6rem;
 }
 
 /* bmi calculator css */
@@ -260,7 +285,7 @@ header {
 }
 
 .bmi-calc-title {
-    width: 30rem;
+    width: 35rem;
     margin: 0 auto;
 }
 
@@ -270,7 +295,54 @@ header {
 }
 
 .bmi-calc-title p {
-    font-size: 14px;
+    font-size: .9rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.calculator {
+    display: flex;
+    gap: 10rem;
+}
+
+.bmi-chart h1 {
+    width: 16rem;
+    margin-bottom: 3rem;
+}
+
+.bmi-chart table, .bmi-chart th, .bmi-chart td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+.bmi-chart td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+}
+
+.bmi-rght-part p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.bmi-form {
+    display: flex;
+    gap: 5rem;
+}
+
+.form input, .form select {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 10px;
+}
+
+#bmi-btn {
+    margin-top: 1rem;
 }
 
 /* teem member css */
@@ -295,13 +367,49 @@ header {
 .teem-member {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 20px;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.card1 {
+    position: relative;
+}
+
+.card2 {
+    position: relative;
+}
+
+.card3 {
+    position: relative;
+}
+
+.card4 {
+    position: relative;
+}
+
+.card5 {
+    position: relative;
+}
+
+.card6 {
+    position: relative;
+}
+
+.name-title {
+    position: absolute;
+    text-align: left;
+    left: 1rem;
+    bottom: -3rem;
 }
 
 .teem-member img {
     object-fit: cover;
-    width: 20rem;
-    height: 16rem;
+    height: 20rem;
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 20px;    
 }
 
 /* footer css */
