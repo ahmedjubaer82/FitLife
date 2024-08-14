@@ -118,6 +118,30 @@ header {
     cursor: pointer;
 }
 
+.header-img {
+    position: relative;
+}
+
+.no1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.no2 {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+}
+
+.over-lay {
+    background-color: rgba(255, 255, 255, 0.532);
+    padding: 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(1rem);
+}
+
 /* habit cards css */
 .habit-cards-container {
     background-color: black;
