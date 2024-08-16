@@ -642,6 +642,7 @@ footer {
 /* habit-cards */
     .habit-cards {
         grid-template-columns: 1fr;
+        gap: 0;
     }
 
 /* extra-mile */
