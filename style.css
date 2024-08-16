@@ -698,6 +698,7 @@ footer {
 
     .calculator {
         flex-direction: column;
+        gap: 3rem;
     }
 
     .bmi-calc-title {
@@ -712,5 +713,6 @@ footer {
 /* footer */
     .footers {
         grid-template-columns: 1fr;
+        gap: 3rem;
     }
 }
