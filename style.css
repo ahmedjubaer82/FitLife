@@ -359,11 +359,15 @@ header {
     position: relative;
 }
 
-.foods-name-title {
+.foods-name-desc {
     position: absolute;
     text-align: left;
     left: 1rem;
     bottom: -3rem;
+}
+
+.foods-name-desc p, .foods-name-desc h2 {
+    color: white;
 }
 
 .foods img {
