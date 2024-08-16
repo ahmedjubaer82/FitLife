@@ -12,7 +12,6 @@
     width: 90%;
     margin: 0 auto;
     padding: 2rem 0;
-    border: 2px solid greenyellow;
 }
 
 .full-width {
@@ -308,6 +307,76 @@ header {
     font-size: .6rem;
 }
 
+/* healthy food css */
+.healthy-food-container {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.healthy-food-container h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-top: 2rem;
+}
+
+.healthy-food-container p {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+.foods {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 20px;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.card1 {
+    position: relative;
+}
+
+.card2 {
+    position: relative;
+}
+
+.card3 {
+    position: relative;
+}
+
+.card4 {
+    position: relative;
+}
+
+.card5 {
+    position: relative;
+}
+
+.card6 {
+    position: relative;
+}
+
+.foods-name-title {
+    position: absolute;
+    text-align: left;
+    left: 1rem;
+    bottom: -3rem;
+}
+
+.foods img {
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+    border-radius: 20px;    
+}
+
+#order-now {
+    margin-top: 1rem;
+}
+
 /* bmi calculator css */
 .bmi-calc-container {
     background-color: black;
@@ -370,7 +439,7 @@ header {
     border: none;
     border-radius: 8px;
     color: #828282;
-    box-sizing: border-box; /* Ensures padding is included in width */
+    box-sizing: border-box;
 }
 
 .block-row select {
@@ -450,7 +519,6 @@ header {
     object-fit: cover;
     height: 20rem;
     width: 100%;
-    /* height: 100%; */
     border-radius: 20px;    
 }
 
@@ -614,6 +682,11 @@ footer {
         grid-template-columns: 1fr 1fr;    
     }
 
+/* foods */
+    .foods {
+        grid-template-columns: 1fr;
+    }
+
 /* bmi-calc */
     .bmi-calc-title h1 {
         font-size: 2rem;
@@ -631,12 +704,12 @@ footer {
         width: 90%;
     }
 
-/* teem-member     */
+/* teem-member */
     .teem-member {
         grid-template-columns: 1fr;
     }
 
-/* footer     */
+/* footer */
     .footers {
         grid-template-columns: 1fr;
     }
